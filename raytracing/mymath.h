@@ -67,6 +67,10 @@ struct Vec2 {
 	};
 };
 
+inline Vec2 operator*(double t, const Vec2 &v) { return v * t; }
+inline Vec2 operator/(double t, const Vec2 &v) { return v / t; }
+
+
 /*****************************************************************************/
 /*                                                                           */
 /* Vec3                                                                      */
@@ -139,6 +143,9 @@ inline Vec3 cross(const Vec3 &v1, const Vec3 &v2) {
 	return ret;
 }
 
+inline Vec3 operator*(double t, const Vec3 &v) { return v * t; }
+inline Vec3 operator/(double t, const Vec3 &v) { return v / t; }
+
 /*****************************************************************************/
 /*                                                                           */
 /* Vec4                                                                      */
@@ -194,6 +201,10 @@ inline Vec3::Vec3(const Vec4 &v) {
 inline double Vec3::operator*(const Vec4 &v) const {
 	return x * v.x + y * v.y + z * v.z + v.w;
 }
+
+inline Vec4 operator*(double t, const Vec4 &v) { return v * t; }
+inline Vec4 operator/(double t, const Vec4 &v) { return v / t; }
+
 
 /*****************************************************************************/
 /*                                                                           */
