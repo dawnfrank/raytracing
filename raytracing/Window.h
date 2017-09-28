@@ -5,6 +5,7 @@
 #include <vector>
 
 #include "windows.h"
+#include "renderer.h"
 
 class Window
 {
@@ -14,7 +15,6 @@ public:
 
 	void Close();
 	bool Update();
-	void Paint() { _renderer->Paint(); }
 
 	Renderer* GetRenderer() { return _renderer; }
 	HWND GetHandler() { return _win32_window; }

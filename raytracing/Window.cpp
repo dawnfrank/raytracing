@@ -2,7 +2,7 @@
 #include <assert.h>
 
 #include "Window.h"
-#include "Renderer.h"
+#include "renderer.h"
 
 Window::Window(Renderer * renderer, uint32_t size_x, uint32_t size_y, std::wstring name)
 {
