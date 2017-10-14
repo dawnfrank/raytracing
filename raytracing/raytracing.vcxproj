@@ -152,9 +152,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fps.h" />
-    <ClInclude Include="hitable.h" />
-    <ClInclude Include="hitable_list.h" />
     <ClInclude Include="mymath.h" />
+    <ClInclude Include="objectbase.h" />
     <ClInclude Include="ray.h" />
     <ClInclude Include="renderer.h" />
     <ClInclude Include="sphere.h" />

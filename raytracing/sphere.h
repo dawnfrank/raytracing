@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Hitable.h"
+#include "objectbase.h"
 
-class Sphere :public Hitable {
+class Sphere:public ObjectBase{
 public:
 	Sphere() {}
 	Sphere(Vec3 cen, double r) : center(cen), radius(r){};
