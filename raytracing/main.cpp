@@ -3,36 +3,42 @@
 
 #include "renderer.h"
 #include "Window.h"
-#include "mymath.h"
 #include "world.h"
 
 int main() {
-	int x = 400;
-	int y = 300;
+	int w = 400;
+	int h = 300;
 
 	Renderer render;
-	auto w = render.OpenWindow(x, y, TEXT("test"));
-
-	double u,v;
-	Vec3 pixel;
 	HDC hdc;
+	auto window = render.OpenWindow(w, h, TEXT("test"));
 
-	Vec3 lower_left_corner(-2.0, -1.5, -1.0);
-	Vec3 horizontal(4.0, 0.0, 0.0);
-	Vec3 vertical(0.0, 3.0, 0.0);
-	Vec3 origin(0.0, 0.0, 0.0);
+	World world;
+	world.build();
 
+
+	RGBColor pixel_color;
+	Ray ray;
+	double zw = 100;
+	double x, y;
+
+	printf("%d %d %f\n",  world.vp.hres, world.vp.vres, world.vp.pixel_size);
+
+	ray.direction = Vec3(0, 0, -1);
+	
 	while (render.Run()) {
-		hdc = BeginPaint(w->GetHandler(), &w->GetPainter());
-		for (int j = 0; j != y; ++j) {
-			for (int i = 0; i != x; ++i) {
-				u = double(i) / double(x);
-				v = double(j) / double(y);
-				SetPixel(hdc, i, j, RGB(int(u*255.99), int(v*255.99), int(0.2*255.99)));
+		hdc = BeginPaint(window->GetHandler(), &window->GetPainter());
+		for (int j = 0; j != h; ++j) {
+			for (int i = 0; i != w; ++i) {
+				x = world.vp.pixel_size*(i - 0.5*(world.vp.hres - 1));
+				y = world.vp.pixel_size*(j - 0.5*(world.vp.vres - 1));
+				ray.origin = Vec3(x, y, zw);
+				pixel_color = world.tracer_ptr->trace_ray(ray);
+
+				SetPixel(hdc, i, j, RGB(int(pixel_color.r*255.99), int(pixel_color.g*255.99), int(pixel_color.b*255.99)));
 			}
 		}
-		
-		EndPaint(w->GetHandler(), &w->GetPainter());
+		EndPaint(window->GetHandler(), &window->GetPainter());
 	}
 	return 0;
 }

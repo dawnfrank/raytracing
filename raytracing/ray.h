@@ -1,8 +1,9 @@
 #pragma once
 
 #include "mymath.h"
+
 struct Ray {
-	Ray();
+	Ray() {};
 	Ray(const Vec3& ori, const Vec3& dir) :origin(ori), direction(dir) { direction.normalize(); }
 	Ray(const Ray& r) { origin = r.origin; direction = r.direction; }
 	

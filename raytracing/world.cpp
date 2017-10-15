@@ -1,4 +1,5 @@
 #include "world.h"
+#include "singlesphere.h"
 
 void World::build() {
 	vp.hres = 300;
@@ -7,7 +8,7 @@ void World::build() {
 	vp.gamma = 1.0;
 
 	bg_color = RGBColor(0, 0, 0);
-	//	tracer_ptr = new SingleSphere(this);
+	tracer_ptr = new SingleSphere(this);
 
 	sphere.center = Vec3(0, 0, 0);
 	sphere.radius = 85.0;

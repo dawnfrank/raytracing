@@ -1,10 +1,11 @@
 #pragma once
 
 
-struct ViewPlane {
+class ViewPlane {
+public:
 	int hres;
 	int vres;
-	float pixel_size;
-	float gamma;
-	float inv_gamma;
+	double pixel_size;
+	double gamma;
+	double inv_gamma;
 };
