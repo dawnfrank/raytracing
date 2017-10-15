@@ -22,8 +22,6 @@ int main() {
 	double zw = 100;
 	double x, y;
 
-	printf("%d %d %f\n",  world.vp.hres, world.vp.vres, world.vp.pixel_size);
-
 	ray.direction = Vec3(0, 0, -1);
 	
 	while (render.Run()) {

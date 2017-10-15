@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="multiobject.cpp" />
     <ClCompile Include="renderer.cpp" />
     <ClCompile Include="shaderec.cpp" />
     <ClCompile Include="singlesphere.cpp" />
@@ -156,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="define.h" />
+    <ClInclude Include="multiobject.h" />
     <ClInclude Include="rgbcolor.h" />
     <ClInclude Include="fps.h" />
     <ClInclude Include="mymath.h" />

@@ -2,7 +2,7 @@
 
 #include "objectbase.h"
 
-class Sphere{
+class Sphere:public ObjectBase{
 public:
 	Sphere() {}
 	Sphere(Vec3 cen, double r) : center(cen), radius(r){};
