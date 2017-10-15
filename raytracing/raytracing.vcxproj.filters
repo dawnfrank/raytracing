@@ -24,6 +24,18 @@
     <ClCompile Include="renderer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="shaderec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="singlesphere.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="world.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sphere.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -45,6 +57,30 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="objectbase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="plane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shaderec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="world.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rgbcolor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tracer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="singlesphere.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="viewplane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

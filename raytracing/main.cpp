@@ -3,8 +3,8 @@
 
 #include "renderer.h"
 #include "Window.h"
-#include "sphere.h"
 #include "mymath.h"
+#include "world.h"
 
 int main() {
 	int x = 400;

@@ -148,16 +148,28 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="renderer.cpp" />
+    <ClCompile Include="shaderec.cpp" />
+    <ClCompile Include="singlesphere.cpp" />
+    <ClCompile Include="sphere.cpp" />
     <ClCompile Include="Window.cpp" />
+    <ClCompile Include="world.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="define.h" />
+    <ClInclude Include="rgbcolor.h" />
     <ClInclude Include="fps.h" />
     <ClInclude Include="mymath.h" />
     <ClInclude Include="objectbase.h" />
+    <ClInclude Include="plane.h" />
     <ClInclude Include="ray.h" />
     <ClInclude Include="renderer.h" />
+    <ClInclude Include="shaderec.h" />
+    <ClInclude Include="singlesphere.h" />
     <ClInclude Include="sphere.h" />
+    <ClInclude Include="tracer.h" />
+    <ClInclude Include="viewplane.h" />
     <ClInclude Include="Window.h" />
+    <ClInclude Include="world.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
