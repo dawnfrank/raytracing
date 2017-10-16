@@ -146,13 +146,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="drand48.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="multiobject.cpp" />
     <ClCompile Include="plane.cpp" />
     <ClCompile Include="renderer.cpp" />
+    <ClCompile Include="sampler.cpp" />
+    <ClCompile Include="sample_jittered.cpp" />
     <ClCompile Include="shaderec.cpp" />
     <ClCompile Include="singlesphere.cpp" />
     <ClCompile Include="sphere.cpp" />
+    <ClCompile Include="viewplane.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="world.cpp" />
   </ItemGroup>
@@ -167,6 +171,13 @@
     <ClInclude Include="plane.h" />
     <ClInclude Include="ray.h" />
     <ClInclude Include="renderer.h" />
+    <ClInclude Include="sampler.h" />
+    <ClInclude Include="sample_hammersley.h" />
+    <ClInclude Include="sample_jittered.h" />
+    <ClInclude Include="sample_multijittered.h" />
+    <ClInclude Include="sample_nrooks.h" />
+    <ClInclude Include="sample_random.h" />
+    <ClInclude Include="sample_regular.h" />
     <ClInclude Include="shaderec.h" />
     <ClInclude Include="singlesphere.h" />
     <ClInclude Include="sphere.h" />

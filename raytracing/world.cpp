@@ -3,6 +3,7 @@
 #include "multiobject.h"
 #include "define.h"
 #include "plane.h"
+#include "sample_jittered.h"
 
 
 /*
@@ -31,11 +32,14 @@ void World::build() {
 */
 
 void World::build() {
+	int num_samples = 4;
+
 	vp.hres = 400;
 	vp.vres = 300;
 	vp.pixel_size = 1;
 	vp.gamma = 1.0;
 	vp.inv_gamma = 1.0;
+	vp.set_sampler(new Sample_Jittered(num_samples));
 
 	bg_color = RGBColor(0, 0, 0);
 	tracer_ptr = new SingleSphere(this);
@@ -50,11 +54,11 @@ inline void World::add_object(ObjectBase * object_ptr)
 	objects.push_back(object_ptr);
 }
 
-ShaderRec World::hit_objects(const Ray &ray){
+ShaderRec World::hit_objects(const Ray &ray) {
 	ShaderRec sr(*this);
 
 	double t;
-	double tmin=kHugeValue;
+	double tmin = kHugeValue;
 	int num_objects = objects.size();
 
 	for (int i = 0; i < num_objects; ++i) {

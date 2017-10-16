@@ -42,6 +42,18 @@
     <ClCompile Include="plane.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="sample_jittered.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="viewplane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sampler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="drand48.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -90,6 +102,27 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="multiobject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sampler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sample_random.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sample_regular.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sample_jittered.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sample_nrooks.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sample_multijittered.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sample_hammersley.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="drand48.h">
