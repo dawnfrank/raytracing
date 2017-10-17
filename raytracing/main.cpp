@@ -20,7 +20,7 @@ int main() {
 	Ray ray;
 	double zw = 100;
 	Vec2 sp, pp;
-	int sample_num = world.vp.get_samples_num()*world.vp.get_samples_num();
+	int sample_num = world.vp.get_samples_num();
 
 	ray.direction = Vec3(0, 0, -1);
 

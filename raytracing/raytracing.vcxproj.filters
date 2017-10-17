@@ -48,10 +48,22 @@
     <ClCompile Include="viewplane.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="sampler.cpp">
+    <ClCompile Include="drand48.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="drand48.cpp">
+    <ClCompile Include="sample_random.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sample_multijittered.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sample_nrooks.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sample_regular.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sampler.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -120,9 +132,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="sample_multijittered.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="sample_hammersley.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="drand48.h">

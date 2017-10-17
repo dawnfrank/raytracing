@@ -10,9 +10,10 @@ Sample_Jittered::Sample_Jittered(const int num_samples, const int num_sets)
 
 void Sample_Jittered::generate_samples()
 {
+	int n = (int)sqrt(num_samples);
 	for (int p = 0; p != num_sets; ++p)
-		for (int i = 0; i != num_samples; ++i)
-			for (int j = 0; j != num_samples; ++j) {
+		for (int i = 0; i != n; ++i)
+			for (int j = 0; j != n; ++j) {
 				Vec2 sp((i + drand48()) / num_samples, (j + drand48()) / num_samples);
 				samples.push_back(sp);
 			}

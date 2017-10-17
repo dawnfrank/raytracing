@@ -3,10 +3,11 @@
 #include <vector>
 
 #include "mymath.h"
+#include "define.h"
 
 class Sampler {
 public:
-	Sampler(const int num_samples=4,const int num_sets=31):
+	Sampler(const int num_samples= DEFAULT_SAMPLES,const int num_sets= DEFAULT_SETS):
 		num_samples(num_samples),
 		num_sets(num_sets)
 	{}

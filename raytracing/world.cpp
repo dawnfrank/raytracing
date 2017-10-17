@@ -3,7 +3,7 @@
 #include "multiobject.h"
 #include "define.h"
 #include "plane.h"
-#include "sample_jittered.h"
+#include "sample_multijittered.h"
 
 
 /*
@@ -32,14 +32,14 @@ void World::build() {
 */
 
 void World::build() {
-	int num_samples = 4;
+	int num_samples = 16;
 
 	vp.hres = 400;
 	vp.vres = 300;
 	vp.pixel_size = 1;
 	vp.gamma = 1.0;
 	vp.inv_gamma = 1.0;
-	vp.set_sampler(new Sample_Jittered(num_samples));
+	vp.set_sampler(new Sample_MultiJittered(num_samples));
 
 	bg_color = RGBColor(0, 0, 0);
 	tracer_ptr = new SingleSphere(this);

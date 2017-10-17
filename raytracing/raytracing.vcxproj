@@ -153,6 +153,10 @@
     <ClCompile Include="renderer.cpp" />
     <ClCompile Include="sampler.cpp" />
     <ClCompile Include="sample_jittered.cpp" />
+    <ClCompile Include="sample_multijittered.cpp" />
+    <ClCompile Include="sample_nrooks.cpp" />
+    <ClCompile Include="sample_random.cpp" />
+    <ClCompile Include="sample_regular.cpp" />
     <ClCompile Include="shaderec.cpp" />
     <ClCompile Include="singlesphere.cpp" />
     <ClCompile Include="sphere.cpp" />
@@ -172,7 +176,6 @@
     <ClInclude Include="ray.h" />
     <ClInclude Include="renderer.h" />
     <ClInclude Include="sampler.h" />
-    <ClInclude Include="sample_hammersley.h" />
     <ClInclude Include="sample_jittered.h" />
     <ClInclude Include="sample_multijittered.h" />
     <ClInclude Include="sample_nrooks.h" />
