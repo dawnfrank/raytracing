@@ -4,6 +4,7 @@
 #include "define.h"
 #include "plane.h"
 #include "sample_multijittered.h"
+#include "sample_jittered.h"
 
 
 /*

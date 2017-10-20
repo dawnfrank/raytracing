@@ -4,7 +4,7 @@
 #include "RGBColor.h"
 
 const int DEFAULT_SAMPLES = 16;
-const int DEFAULT_SETS = 31;
+const int DEFAULT_SETS = 53;
 
 const double 	TWO_PI = 6.2831853071795864769;
 const double 	PI_ON_180 = 0.0174532925199432957;

@@ -14,7 +14,7 @@ void Sample_MultiJittered::generate_samples()
 	int gridIndex, gridNum, blockIndex, blockNum;
 	int gridRow, gridCol, blockRow, blockCol;
 	int n = (int)sqrt(num_samples);
-	int u, v;
+	double u, v;
 
 	for (int k = 0; k != num_sets; ++k)
 	{
@@ -37,8 +37,8 @@ void Sample_MultiJittered::generate_samples()
 			blockRow = blockNum % n;
 			blockCol = blockNum / n;
 
-			u = int(gridRow*n + blockRow + drand48()) / num_samples;
-			v = int(gridCol*n + blockCol + drand48()) / num_samples;
+			u = double(gridRow*n + blockRow + drand48()) / double(num_samples);
+			v = double(gridCol*n + blockCol + drand48()) / double(num_samples);
 
 			samples.push_back(Vec2(u,v));
 		}
