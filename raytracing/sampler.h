@@ -15,11 +15,13 @@ public:
 	virtual void generate_samples() = 0;
 	Vec2 sample_unit_square();
 	void map_samples_to_unit_disk(void);
+	void map_samples_to_hemisphere(const double exp);
 
 	int num_samples;
 	int num_sets;
 	std::vector<Vec2> samples;
 	std::vector<Vec2> disk_samples;
+	std::vector<Vec3> hemisphere_samples;
 	unsigned long count=0;
 	int jump=0;
 };

@@ -53,3 +53,20 @@ void Sampler::map_samples_to_unit_disk(void)
 
 	samples.erase(samples.begin(), samples.end());
 }
+
+void Sampler::map_samples_to_hemisphere(const double exp)
+{
+	int size = samples.size();
+	hemisphere_samples.reserve(num_samples * num_sets);
+
+	for (int j = 0; j < size; j++) {
+		double cos_phi = cos(2.0 * PI * samples[j].x);
+		double sin_phi = sin(2.0 * PI * samples[j].x);
+		double cos_theta = pow((1.0 - samples[j].y), 1.0 / (exp + 1.0));
+		double sin_theta = sqrt(1.0 - cos_theta * cos_theta);
+		double pu = sin_theta * cos_phi;
+		double pv = sin_theta * sin_phi;
+		double pw = cos_theta;
+		hemisphere_samples.push_back(Vec3(pu, pv, pw));
+	}
+}
