@@ -66,6 +66,15 @@
     <ClCompile Include="sampler.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_pinhole.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="camera_orthographic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -135,6 +144,27 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="drand48.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_orthographic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_pinhole.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_thinlens.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_fisheye.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_spherical.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="camera_stereo.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -146,6 +146,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="camera_orthographic.cpp" />
+    <ClCompile Include="camera_pinhole.cpp" />
     <ClCompile Include="drand48.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="multiobject.cpp" />
@@ -165,6 +168,13 @@
     <ClCompile Include="world.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="camera_fisheye.h" />
+    <ClInclude Include="camera_orthographic.h" />
+    <ClInclude Include="camera_pinhole.h" />
+    <ClInclude Include="camera_spherical.h" />
+    <ClInclude Include="camera_stereo.h" />
+    <ClInclude Include="camera_thinlens.h" />
     <ClInclude Include="define.h" />
     <ClInclude Include="drand48.h" />
     <ClInclude Include="multiobject.h" />

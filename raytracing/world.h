@@ -6,6 +6,7 @@
 #include "viewplane.h"
 #include "tracer.h"
 #include "objectbase.h"
+#include "camera.h"
 
 class World {
 public:
@@ -21,5 +22,7 @@ public:
 	Sphere sphere;
 	ViewPlane vp;
 	Tracer* tracer_ptr;
+	Camera* camera_ptr;
 	std::vector<ObjectBase*> objects;
+	std::vector<RGBColor> bit_map;
 };

@@ -4,8 +4,7 @@
 #include "define.h"
 #include "plane.h"
 #include "sample_multijittered.h"
-#include "sample_jittered.h"
-
+#include "camera_pinhole.h"
 
 /*
 void World::build() {
@@ -34,7 +33,7 @@ void World::build() {
 
 void World::build() {
 	int num_samples = 16;
-
+	bit_map.resize(400 * 300);
 	vp.hres = 400;
 	vp.vres = 300;
 	vp.pixel_size = 1;
@@ -44,6 +43,7 @@ void World::build() {
 
 	bg_color = RGBColor(0, 0, 0);
 	tracer_ptr = new SingleSphere(this);
+	camera_ptr = new Camera_Pinhole(Vec3(0,0,100),Vec3(0,0,0));
 
 	sphere.center = Vec3(0, 0, 0);
 	sphere.radius = 85;
